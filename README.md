@@ -1,4 +1,4 @@
-# NDR_Harvester
+# MDR_Harvester
 Takes downloaded source files and loads their data into the MDR source or staging databases.
 
 The program uses the XML files already downloaded as a data source located in a source folder (one is designated for
