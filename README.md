@@ -34,7 +34,8 @@ The table below shows the allowed parameters.
 | **-G**        | Is a flag that can be applied to prevent a normal harvest from occurring so that the SD tables are not recreated and reloaded. Instead, they are updated using revised contextual data so that - for example - organisation IDs and topic data codes can be re-applied. The option provides a relatively efficient way of updating data, though it works better if preceded with a type 1 complete harvest of all data. Because the data is revised, the various composite hash values summarising data content must also be re-created (see [Missing PIDs and Hashing](https://ecrin-mdr.online/index.php/Missing_PIDs_and_Hashing))
 ## Dependencies
 
-The program is written in .Net 7.0.
+The program is written in `.Net 7.0`.
+
 It uses the following `Nuget` packages:
 
 - `CommandLineParser 2.9.1` - to carry out the initial processing of the CLI arguments
@@ -42,7 +43,7 @@ It uses the following `Nuget` packages:
 - `Npgsql 7.0.0`, `Dapper 2.0.123` and `Dapper.contrib 2.0.78` to handle database connectivity
 
 - `PostgreSQLCopyHelper 2.8.0` to support fast bulk inserts into Postgres
-
+  
 - `Microsoft.Extensions.Configuration 7.0.0`, and `.Configuration.Json 7.0.0` to read the json settings file.
 
 - `Microsoft.Extensions.DependencyInjection 7.0.0` and `.Hosting 7.0.0` to support the initial setup of the application.
