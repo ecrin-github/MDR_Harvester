@@ -27,11 +27,11 @@ The table below shows the allowed parameters.
 
 | Parameter | Description   |
 |:----------| :-------------|
-| -s        | Followed by a comma-delimited list of source IDs. The data is harvested for each specified host.
-| -t        | Followed by an integer. Indicates the type of harvest to be carried out. (1 = full, i.e. all available files, 2 = only files downloaded since last import, 3 = test data only).
-| -E        | As a flag, it establishes expected test data. If present, it only creates and fills tables for the 'expected' data, which can be compared with processed test data.
-| -F        | As a flag, it harvests all test data. If present, it only creates and fills tables for the designated test data for comparison with expected test data.
-| -G        | Is a flag that can be applied to prevent a normal harvest from occurring so that the SD tables are not recreated and reloaded. Instead, they are updated using revised contextual data so that - for example - organisation IDs and topic data codes can be re-applied. The option provides a relatively efficient way of updating data, though it works better if preceded with a type 1 complete harvest of all data. Because the data is revised, the various composite hash values summarising data content must also be re-created (see [Missing PIDs and Hashing](https://ecrin-mdr.online/index.php/Missing_PIDs_and_Hashing))
+| **-s**        | Followed by a comma-delimited list of source IDs. The data is harvested for each specified host.
+| **-t**        | Followed by an integer. Indicates the type of harvest to be carried out. (1 = full, i.e. all available files, 2 = only files downloaded since last import, 3 = test data only).
+| **-E**        | As a flag, it establishes expected test data. If present, it only creates and fills tables for the 'expected' data, which can be compared with processed test data.
+| **-F**        | As a flag, it harvests all test data. If present, it only creates and fills tables for the designated test data for comparison with expected test data.
+| **-G**        | Is a flag that can be applied to prevent a normal harvest from occurring so that the SD tables are not recreated and reloaded. Instead, they are updated using revised contextual data so that - for example - organisation IDs and topic data codes can be re-applied. The option provides a relatively efficient way of updating data, though it works better if preceded with a type 1 complete harvest of all data. Because the data is revised, the various composite hash values summarising data content must also be re-created (see [Missing PIDs and Hashing](https://ecrin-mdr.online/index.php/Missing_PIDs_and_Hashing))
 ## Dependencies
 
 The program is written in .Net 7.0.
